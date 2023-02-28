@@ -5,28 +5,30 @@ body {
 /* Navigational Menu */
 
 #main-menu {
-	margin: 0;
-	width: max-content;
 	font-family: sans-serif;
+	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
 }
 
 #main-menu li {
-	display: flex;
-    justify-content: space-evenly;
 	float: left;
-	margin-left: 2px;
+	background-color: #fff;
 }
 
 #main-menu a {
-	display: flex;
-	padding: 5px;
-	text-decoration: none;
-	background-color: #fff;
-	color: black;
-    width: 200px;
+	display: block;
+  	color: rgb(0, 0, 0);
+  	text-align: center;
+  	padding: 14px 80px;
+  	text-decoration: none;
 }
 
 #main-menu a:hover {
 	background-color: rgb(197, 47, 97);
 	color:#fff;
+}
+
+.active {
+	background-color: rgb(197, 47, 97);
 }
