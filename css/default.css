@@ -1,0 +1,32 @@
+body {
+    background-color: rgb(244, 154, 184);
+}
+
+/* Navigational Menu */
+
+#main-menu {
+	margin: 0;
+	width: max-content;
+	font-family: sans-serif;
+}
+
+#main-menu li {
+	display: flex;
+    justify-content: space-evenly;
+	float: left;
+	margin-left: 2px;
+}
+
+#main-menu a {
+	display: flex;
+	padding: 5px;
+	text-decoration: none;
+	background-color: #fff;
+	color: black;
+    width: 200px;
+}
+
+#main-menu a:hover {
+	background-color: rgb(197, 47, 97);
+	color:#fff;
+}
