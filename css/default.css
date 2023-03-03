@@ -46,6 +46,10 @@ img {
 /* Mobile view */
 @media screen and (max-width: 800px) {
 
+	#main-menu {
+		flex-direction: column;
+	}
+
 	.recipe-list {
 		grid-template-columns: 1fr;
 	}
