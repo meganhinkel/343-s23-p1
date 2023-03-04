@@ -1,3 +1,9 @@
+body {
+	margin:0%;
+	padding:0%;
+
+}
+
 .entire-page {
 	background-color: rgb(244, 154, 184);
 	display: flex;
@@ -9,7 +15,7 @@
 
 .header {
 	padding: 5px;
-	text-align:left;
+	text-align: left;
 	background: #EF4E56;
 	color: white;
 	font-size: 20px;
@@ -19,6 +25,7 @@
 #main-menu {
 	font-family: Helvetica, sans-serif, Arial;
 	font-size: large;
+	font-weight: bold;
 	list-style-type: none;
 	background-color: #fff;
 	margin: 0;
@@ -32,15 +39,46 @@
 	color: rgb(0, 0, 0);
 	text-align: center;
 	text-decoration: none;
+	padding: 10px;
 }
 
 #main-menu a:hover {
 	background-color: rgb(197, 47, 97);
-	color: #fff;
+	border: 6px solid;
+	border-color: rgb(197, 47, 97);
+	color:white;
+	/* padding: 5px; */
+}
+
+/* Grow */
+.hvr-grow {
+	display: inline-block;
+	vertical-align: middle;
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	transition-duration: 0.3s;
+	transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+	transform: scale(1.1);
 }
 
 .active {
-	background-color: rgb(197, 47, 97);
+	border: 6px solid;
+	border-color: rgb(197, 47, 97);
+	/* display: inline-block;
+	vertical-align: middle; */
+	/* border-color:white; */
+}
+
+.nonactive {
+	border: 6px solid;
+	border-color: white;
 }
 
 /* Recipe Lists */
@@ -55,10 +93,28 @@ img {
 }
 
 /* Mobile view */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 750px) {
 
 	#main-menu {
 		flex-direction: column;
+		padding: 2px;
+		justify-content: center;
+	}
+
+	.nonactive {
+		border-style: hidden;
+	}
+
+	li {
+		align-self: center;
+	}
+
+	.active {
+		border: 6px solid;
+		border-color: rgb(197, 47, 97);
+		/* display: inline-block;
+		vertical-align: middle; */
+		/* border-color:white; */
 	}
 
 	.recipe-list {

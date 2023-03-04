@@ -1,0 +1,46 @@
+.entire-page {
+    background-color: #D0EFFF;
+}
+
+/* Navigational Menu */
+
+.header {
+    background: #5693B2;
+    color: white;
+}
+
+h2 {
+    color:#15587B;
+    font-weight: bold;
+}
+
+
+#main-menu {
+    background-color: white;
+}
+
+#main-menu a {
+    color: black;
+}
+
+#main-menu a:hover {
+    background-color: #15587B;
+    border-color: #15587B;
+    color: white;
+}
+
+
+.active {
+    border-color: #15587B;
+}
+
+.nonactive {
+    border-color: white;
+}
+
+/* Mobile view */
+@media screen and (max-width: 750px) {
+    .active {
+        border-color: #15587B;
+    }
+}
