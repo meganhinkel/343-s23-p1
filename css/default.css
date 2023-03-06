@@ -1,7 +1,31 @@
 body {
 	margin:0%;
 	padding:0%;
+}
 
+h1 {
+	text-align: left;
+	font-size: 230%;
+	font-weight: 600;
+	margin: 2%;
+	display: flex;
+	justify-content: space-between;
+}
+
+h2 {
+	text-align: center;
+	font-size: 230%;
+	font-weight: 600;
+}
+
+h3 {
+	text-align: left;
+	font-size: 130%;
+	margin-left: 2%;
+}
+
+h4 {
+	margin-left: 3%;
 }
 
 .entire-page {
@@ -86,6 +110,18 @@ body {
 	display: grid;
 	gap: 10px;
 	grid-template-columns: 1fr 3fr;
+	margin-left: 3%;
+	margin-right: 3%;
+}
+
+#ingredients {
+	list-style: circle;
+	margin-left: 2%;
+}
+
+#instructions {
+	list-style: decimal;
+	margin-left: 2%;
 }
 
 img {
@@ -119,5 +155,9 @@ img {
 
 	.recipe-list {
 		grid-template-columns: 1fr;
+	}
+
+	h3 {
+		text-align: center;
 	}
 }
