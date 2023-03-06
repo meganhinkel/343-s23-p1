@@ -44,3 +44,53 @@ h2 {
         border-color: #BD7F5B;
     }
 }
+
+.intro {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding: 3%;
+    -ms-grid-column-align: center;
+}
+
+.intro p {
+    text-align: left;
+    line-height: 150%;
+    font-size: 150%;
+    padding-right: 3%;
+}
+
+hr {
+    width: 70%;
+    border-color: black;
+}
+
+/* Mobile view */
+@media screen and (max-width: 750px) {
+
+    .intro {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+form.form-example {
+    display: table;
+}
+
+div.form-example {
+    display: table-row;
+}
+
+label,
+input {
+    display: table-cell;
+    margin-bottom: 10px;
+}
+
+label {
+    padding-right: 10px;
+}
+
