@@ -8,8 +8,6 @@ h1 {
 	font-size: 230%;
 	font-weight: 600;
 	margin: 2%;
-	display: flex;
-	justify-content: space-between;
 }
 
 h2 {
@@ -114,12 +112,12 @@ h4 {
 	margin-right: 3%;
 }
 
-#ingredients {
+.ingredients {
 	list-style: circle;
 	margin-left: 2%;
 }
 
-#instructions {
+.instructions {
 	list-style: decimal;
 	margin-left: 2%;
 }
